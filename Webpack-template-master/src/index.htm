@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Coding Template</title>
+  <link rel="stylesheet" type="text/css" href="bundle.css">
+</head>
+
+
+<body>
+    
+  <!-- Rød men centrere alt -->
+  <center>
+        
+    <!--  Header  -->
+  <h1> - Skat Bilafgift hjælper - </h1>
+  <h2>Vælg biltype & bilpris</h2>  
+  
+  <!-- Bil Type -->
+
+  <style>
+      .dropbtn {
+        background-color: #3498DB;
+        color: rgb(255, 255, 255);
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+  }
+
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  }
+
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+  .dropdown a:hover {background-color: #aaaac7;}
+
+  .show {display: block;}
+      </style>
+    </head>
+  <body>
+
+
+
+
+<div>
+  <select id="selectIdCarStuffOverHere"> 
+    <option id="1" value="PersonBil"> PersonBil  </option>
+    <option id="2" value="ElBil"> ElBil </option> 
+  </select>
+
+  <button id=SeeSkatButton>Se PersonBil Skat </button>
+
+  <td> <input type="number" class="inputBilPris" name="BilPris" id="BilPris" placeholder="Bil Pris"> </td>
+
+  <span id="output"></span>
+</div>
+
+
+
+
+  <!--  Content of BilUdregning -->
+  <div id="content"></div>
+  <script src="bundle.js"></script>
+
+
+   
+
+</html>
